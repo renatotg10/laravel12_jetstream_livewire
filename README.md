@@ -110,7 +110,7 @@ php artisan lang:publish
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a Licença GPL-3.0. Consulte o arquivo [LICENSE](LICENSE.md) para detalhes.
+Este projeto está licenciado sob a Licença GPL-3.0. Consulte o arquivo [LICENSE](LICENSE) para detalhes.
 
 ---
 
