@@ -51,8 +51,9 @@ Antes de começar, verifique se possui os seguintes itens instalados:
     cp .env.example .env
     ```
 
-5. **Configurar o banco de dados**
-   No arquivo `.env`, ajuste as variáveis conforme seu ambiente:
+5. **Configurar das variáveis de ambiente no arquivo `.env`**
+
+   No arquivo `.env`, ajuste as variáveis de ambiente para uso do idioma pt_BR, banco de dados MySQL e uso do Mailpit no Laragon, que é uma ferramenta usada como servidor de e-mail fake/local para desenvolvimento.
 
     ```env
     APP_NAME=Laravel
@@ -68,6 +69,15 @@ Antes de começar, verifique se possui os seguintes itens instalados:
     DB_DATABASE=laravel
     DB_USERNAME=root
     DB_PASSWORD=
+
+    MAIL_MAILER=smtp
+    MAIL_HOST=127.0.0.1
+    MAIL_PORT=1025
+    MAIL_USERNAME=null
+    MAIL_PASSWORD=null
+    MAIL_ENCRYPTION=null
+    MAIL_FROM_ADDRESS="noreply@meusistema.com"
+    MAIL_FROM_NAME="${APP_NAME}"
     ```
 
 _Observação:_ Se estiver executando a partir do servidor Apache do Laragon, ajuste a variável de ambiente `APP_URL` no arquivo `.env` para `APP_URL=http://laravel12_jetstream_livewire.test`. Lembre-se sempre de atualizar nessa variável de ambiente a URL que acessa ao sistema.
